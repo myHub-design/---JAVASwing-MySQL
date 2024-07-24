@@ -1,0 +1,16 @@
+首先需要先使用
+Musics.initMusic();
+来加载音乐
+然后定义
+MusicPlayer music = Musics.backgroundMusic.get(i);（i为1或2或3用来切换背景音乐）
+或者使用
+MusicPlayer music = Musics.clickMusic.get(i);（i为1或2用来切换按钮音乐）
+然后使用
+new Thread(music).start();
+即可播放音乐
+如果要关闭音乐则使用
+music.changeState();
+
+示例：
+
+该包中的类Main
